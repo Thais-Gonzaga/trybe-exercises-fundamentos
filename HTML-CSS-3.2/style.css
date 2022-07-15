@@ -1,0 +1,23 @@
+h1 {
+    font-family: sans-serif;fantasy;
+
+  }
+  p {
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  body {
+    font-size:16px;
+
+  }
+  #list{
+    font-size: italic;
+    text-align: justify;
+    line-height: 50px;
+  }
+  #amarelo{background-color: yellow;}
+  #vermelho{background-color: red;}
+  #marrom{background-color:brown;}
