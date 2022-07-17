@@ -1,0 +1,55 @@
+
+
+
+div:hover {
+    border:5px solid red 
+}
+div:nth-of-type(1){
+    background-color: rgb(207, 207, 10);
+    width: 200px;
+}
+div:nth-of-type(2){
+    background-color: rgb(255, 123, 0);
+    width: 200px;
+}
+div:nth-of-type(3){
+    background-color:  rgb(255, 0, 119);
+    width: 500px;
+}
+div:nth-of-type(4){
+    background-color:  rgb(0, 255, 42);
+    width: 200px;
+}
+div:nth-of-type(5){
+    background-color:  rgb(0, 255, 213);
+    width: 200px;
+}
+
+
+div:nth-of-type(1) h3{
+    font-family:"Edu VIC WA NT Beginner";
+
+ }
+
+div:nth-of-type(2) h3{
+    font-family:"Rubik Moonrocks";
+    
+    
+}
+div:nth-of-type(3) h3{
+    font-family:"Anton";
+   
+}
+div:nth-of-type(4) h3{
+    font-family:"Pacifico";
+    
+}
+div:nth-of-type(5) h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+div:nth-of-type(2n+1) h3{
+    font-style: italic;
+
+}
