@@ -1,0 +1,58 @@
+
+body{
+    background:linear-gradient(0deg, rgb(10, 125, 148), rgb(151, 242, 242))
+}
+h1, h2{
+    font-size: 60px;
+    text-align: center;
+    font-family:"Edu VIC WA NT Beginner";
+}
+
+header img{
+    position: absolute;
+    z-index: 1;
+}
+
+h3{
+    text-align: left;
+    font-family:"Edu VIC WA NT Beginner";
+    font-size: 50px;
+   }
+nav{
+    background:rgb(10, 125, 148); 
+    position: fixed;
+    width: 100%;
+}
+
+article{
+    margin-top: 200px;
+}
+
+ul {
+    list-style-type: none;
+    /* background-color: red; */
+    text-align: center;
+    width: 50%;
+    margin-left: 300px;
+    /* width: 100%; */
+}
+
+ul li{
+    display: inline-block; 
+    /* background-color: blue; */
+    font-size: 40px;
+    margin-inline: 30px;
+
+    
+}
+
+p, ul, a{
+    text-align: left;
+    font-family:"Ibarra Real Nova";
+    font-size: 30px;
+}
+footer p {
+    text-align: right;
+}
+
+
