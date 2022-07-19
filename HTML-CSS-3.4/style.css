@@ -1,35 +1,51 @@
 
+/* Corpo */
 body{
-    background:linear-gradient(0deg, rgb(10, 125, 148), rgb(151, 242, 242))
+    background:linear-gradient(0deg, rgb(10, 125, 148), rgb(151, 242, 242));
+    text-align: left;
+    font-family:"Ibarra Real Nova";
+    font-size: 30px;
 }
+
+/* Titulos e subtitlos */
 h1, h2{
     font-size: 60px;
     text-align: center;
     font-family:"Edu VIC WA NT Beginner";
 }
 
-header img{
-    position: absolute;
-    z-index: 1;
-}
-
 h3{
     text-align: left;
     font-family:"Edu VIC WA NT Beginner";
     font-size: 50px;
-   }
+}
+
+header{
+    background-image:url('/img/fundodomar.jpg');
+    background-size: cover; /*imagem pega toda largura da pagina */
+    background-position: 50% 90% ; /*consigo controlar o que mostrar da imagem, valores: horizontal vertical */
+    padding:30px 30px 40px 30px ; /*espaçamento interno - valores: acima, esquerda, abaixo, direita */
+    position: fixed;
+    top: 0%;
+    width: 100%;
+  }
+
+/* Links de navegação */
 nav{
-     
     position: fixed;
     width: 100%;
+    top: 20%; 
 }
 
+/* Artigo */
 article{
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
+/* Lista não ordenada */
 ul {
     list-style-type: none;
+    
     /* background-color: red; */
     text-align: center;
     width: 50%;
@@ -37,20 +53,32 @@ ul {
     /* width: 100%; */
 }
 
+/* Cada item da lista não ordenada */
 ul li{
     display: inline-block; 
     /* background-color: blue; */
     font-size: 40px;
     margin-inline: 30px;
+ }
+ 
+/* Tabela */
+table{
+     line-height: 50px; /*altura da linha */
+     width: 30%;
+     background-color: blueviolet;
 
-    
 }
 
-p, ul, a{
-    text-align: left;
-    font-family:"Ibarra Real Nova";
-    font-size: 30px;
+/* Titulo da tabela */
+caption{
+font-family:"Edu VIC WA NT Beginner";
+text-align: center;
+background-color: blue;
+width: 100%;
+font-weight: 900;/*peso da fonte- contraste*/
+
 }
+/* Rodape */
 footer p {
     text-align: right;
 }
