@@ -53,4 +53,15 @@
 // 4)Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, 
 // é divisível por 1 e por ele mesmo. Escreva um algoritmo que retorne o maior número primo entre 2 e 50.
   
-        
+function primos(){
+
+    // for para fazer o numero
+    for(let number = 2; number <= 50; number +=1){
+        let contador = 0;
+        // for para percorrer cada número
+        for(let divisor = 2; divisor <=50; divisor += 1){
+            
+        }
+    }
+}
+console.log(primos())
