@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+function textP1 (){
+    let parag1 = document.getElementsByTagName('p')[1];
+    parag1.innerHTML = 'Uma desenvolvedora web contratada com regime CLT e ganhando mais que o patamar para pagar a trybe'
+}
+textP1();
+
+function colorGreen (){
+    let main = document.getElementsByClassName('main-content')[0];
+    main.style.background = 'rgb(76,164,109)';
+}
+colorGreen();
+
+function colorWhite () {
+    let section = document.getElementsByClassName('center-content')[0];
+    section.style.backgroundColor = 'white';
+}
+colorWhite()
+
+function textH1 (){
+    let h1 = document.getElementsByClassName('title') [0];
+    h1.innerHTML = 'Exercício 5.1 - JavaScript'
+}
+textH1();
+
+function maiúsculo() {
+    let p = document.getElementsByTagName('p');
+    for(let index = 0; index < p.length; index += 1){
+    p[index].innerHTML = p[index].innerHTML.toLocaleUpperCase();
+    }
+}
+maiúsculo()
+
+function imprimirP(){
+    let imprimir = document.getElementsByTagName('p');
+    for (let i = 0; i < imprimir.length; i += 1) {
+        console.log(imprimir[i].innerHTML);
+    }
+}
+imprimirP();
+
+    </script>
+  </body>
+</html>
