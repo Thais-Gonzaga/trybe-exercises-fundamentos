@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+    </main>
+     <script>
+    //  Acesse o elemento elementoOndeVoceEsta.
+        const elemento = document.getElementById('elementoOndeVoceEsta');
+    // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+        const pai = document.getElementById('elementoOndeVoceEsta').parentNode;
+        pai.style.backgroundColor ='red';
+    // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+       const primeiroFilhodoFilho = document.getElementById('primeiroFilhoDoFilho');
+       primeiroFilhodoFilho.innerHTML = 'Você se lembra dos vídeos da aula anterior, como fazer isso?';
+    //    Acesse o primeiroFilho a partir de pai.
+        const primeiroFilho = document.getElementById('pai').firstElementChild;
+        console.log(primeiroFilho);
+    // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+        const priFilho = document.getElementById('elementoOndeVoceEsta').previousElementSibling;;
+        console.log(priFilho);
+    // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+        const atencao = document.getElementById('elementoOndeVoceEsta').nextSibling;
+        console.log(atencao);
+    // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+        const terceiroFilho = document.getElementById('elementoOndeVoceEsta').nextElementSibling;
+        console.log(terceiroFilho);
+    // Agora acesse o terceiroFilho a partir de pai.
+        // const terFIlho = document.getElementById('pai').nextElementSibling.nextElementSibling.nextElementSibling;
+        // console.log(terFIlho);
+
+    </script>
+</body>
+</html>
