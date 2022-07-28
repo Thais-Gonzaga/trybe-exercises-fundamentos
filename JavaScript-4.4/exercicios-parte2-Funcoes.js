@@ -59,7 +59,7 @@
 // Array de teste: [2, 3, 6, 7, 10, 1];.
 // Valor esperado no retorno da função: 4.
 
-number = [2, 3, 6, 7, 10, 1]
+
 for( let index in number){
     console.log(number[index])
 }
@@ -73,4 +73,4 @@ function indiceMaiorValor(number){
         }
     }
 }
-indiceMaiorValor()
+indiceMaiorValor([2, 3, 6, 7, 10, 1])
