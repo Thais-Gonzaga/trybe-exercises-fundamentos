@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+    </main>
+     <script>
+    // Crie um irmão para elementoOndeVoceEsta.
+    const pai = document.getElementById('pai');
+    const newSection = document.createElement('section');
+    newSection.ClassName = 'novoFilho'
+    pai.appendChild(newSection) 
+    // Crie um filho para elementoOndeVoceEsta.
+    const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+    newSection.className = 'newFilho'
+    elementoOndeVoceEsta.appendChild(newSection) 
+    // Crie um filho para primeiroFilhoDoFilho.
+    const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+    newSection.className = 'primeiroNetoDoElementoOndeVcTa'
+    primeiroFilhoDoFilho.appendChild(newSection); 
+    // A partir desse filho criado, acesse terceiroFilho.
+    // const acessarTerceiroFilho = document.getElementsByClassName('primeiroNetoDoElementoOndeVcTa')
+    // .parentElement.parentElement.nextElementSibling
+    // console.log(acessarTerceiroFilho)
+
+    // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+        const acessoPai = document.getElementById('pai');
+        const todosFilhos = acessoPai.childNodes;
+        for(let index = todosFilhos.length -1; index >= 0; index -= 1){
+            let filhoAtual = todosFilhos[index];
+            if(filhoAtual.id !== 'elementoOndeVoceEsta') filhoAtual.remove();
+        }
+        
+        const elemento = document.getElementById('elementoOndeVoceEsta');
+        const netos = elemento.childNodes;
+        
+        for(index = todosFilhos.length -1; index >= 0; index -= 1) {
+            let netoAtual = netos[index]
+            if(netoAtual.id !== "primeiroFilhoDoFilho") netoAtual.remove()
+        }
+ 
+        console.log(elemento);
+        
+    // </script>
+</body>
+</html>
