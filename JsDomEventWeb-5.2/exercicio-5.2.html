@@ -105,14 +105,32 @@
         h3.innerHTML = index
         main.appendChild(h3);
       }
-
-//       Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
-// 🚀 Adicione a classe title na tag h1 criada;
+      // segunda parte:
+//     Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+// 🚀 1)Adicione a classe title na tag h1 criada;
+      h1.className = 'title';
 // 🚀 Adicione a classe description nas 3 tags h3 criadas;
+      // for (let index = 0; index <= 3; index += 1){
+      //   const h3 = document.getElementsByTagName('h3')     
+      //   h3[index].className = 'description';
+    // }
 // 🚀 Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
-// 🚀 Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
-// 🚀 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+      const sectionLeft = document.querySelector('.left-content');
+      main.removeChild(sectionLeft);
+// 🚀 Centralize a section criado no passo 6 (aquele que possui a classe right-content). 
+// Dica: para centralizar, basta configurar o margin-right: auto da section;
+      const sectionRight =document.querySelector('.right-content');
+      sectionRight.style.marginRigth = 'auto';
+// 🚀 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) 
+// para a cor verde;
+        const acessCenter = document.querySelectorAll('.center-content')[0];
+        acessCenter.parentNode.style.backgroundColor = 'green';
 // 🚀 Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+        const acessUl = document.getElementsByTagName('ul')[0];
+        acessUl.lastChild.remove();
+        acessUl.lastChild.remove();
+
+       
 
     </script>
   </body>
