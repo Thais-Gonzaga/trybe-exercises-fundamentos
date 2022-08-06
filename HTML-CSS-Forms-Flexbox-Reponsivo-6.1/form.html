@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário da TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TrybeTrip</h1>
+  </header>
+    
+  <form action="" method="get">
+    <fieldset>
+      <div class="blocks">
+        <!-- Nome Completo:Limitado entre 10 e 40 caracteres. -->
+        <label class="blocks" for="nome-completo"> Nome Completo:
+        <input type="text" id="nome-completo" placeholder="Escreva seu nome completo" min="10" max="50" required></label> 
+        <!-- E-mail:Limitado entre 10 e 50 caracteres. -->
+        <label class="blocks" for="e-mail"> E-mail:
+        <input type="email" name="" id="e-mail" placeholder="Escreva seu e-mail" min="10" max="50" required></label>
+      </div>
+      <div>
+        <!-- Destino Preferido:4 opções: Cidade, Campo, Praia, Montanhas. -->
+        <p>Qual o seu destino preferido?</p>
+        <label for="cidade">
+        <input type="radio" name="destino" id="cidade">Cidade</label>
+        <label for="campo">
+        <input type="radio" name="destino" id="campo">Campo</label>
+        <label for="praia">
+        <input type="radio" name="destino" id="praia">Praia</label>
+        <label for="montanhas">
+        <input type="radio" name="destino" id="montanhas">Montanhas</label>
+      </div>
+      <div class="blocks">
+        <!-- Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?Limite de 500 caracteres. -->
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" required placeholder="Escreva sua resposta aqui..."></textarea>
+        <!-- Qual a melhor data para realizar sua viagem? -->
+        <p>Qual melhor data para realizar sua viagem?</p>
+        <input class="blocks"type="date" name="" id="">
+        <!-- Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? -->
+      </div>
+      <div class="blocks">
+        <label for="oportu">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        <input class="blocks" type="checkbox" name="ofertas" id="oportu"></label>
+        <!-- Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. -->
+        <label for="concordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        <input class="blocks" type="checkbox" name="concordo" id="concordo"></label>
+      </div>
+      </fieldset>
+      <!-- Crie um botão para enviar as informações preenchidas. -->
+      <button id="enviar" type="submit">Enviar</button>
+      <!-- Crie um botão que limpe as informações contidas nos campos; -->
+      <button id="apagar" type="reset">Apagar</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

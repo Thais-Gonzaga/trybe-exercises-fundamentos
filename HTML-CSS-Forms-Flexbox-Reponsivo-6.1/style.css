@@ -1,0 +1,12 @@
+#textarea {
+  resize: none;
+}
+
+.blocks {
+  display: block;
+}
+
+fieldset {
+  width: 50%;
+  display: block;
+}
