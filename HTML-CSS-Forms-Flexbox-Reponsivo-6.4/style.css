@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  /* defina o tamanho Flexbox base para o container da imagem 268px */
+  flex-basis: 268px;
+  /* modifique a ordem em que a logomarca e os itens do menu aparecem na tela */
+  order: 1;
+}
+
+.menu-container {
+  display: flex;
+  /* defina o tamanho Flexbox base para o container do menu 500px. */
+  flex-basis: 500px;
+  /* modifique a ordem em que a logomarca e os itens do menu aparecem na tela */
+  order: 2;
+  /* faça o container do menu crescer, quando houver espaço disponível */
+  flex-grow: 1;
+  /* propriedade align-self no elemento correto  */
+  align-self: center;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  /* faça com que seu container de filmes tenha uma base de 700px */
+  flex-basis: 700px;
+  /* propriedade com o valor 10 que expanda o container */
+  flex-grow: 10;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  /* base de 16% para as div do container de seu card */
+  flex-basis: 16%;
+  /* propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco */
+  flex-grow: 1;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  /* Aplique uma base de 350px para seu container aside.  */
+  flex-basis: 350px;
+  /* Aplique um alinhamento para centralizar */
+  align-self: center;
+  /* e outro para expandir */
+  flex-grow: 1;
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
