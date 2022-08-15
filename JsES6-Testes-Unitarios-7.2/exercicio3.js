@@ -43,3 +43,26 @@ const valuesObject = (obj) => Object.values(obj);
 
 const allLessons = Object.assign({},{lesson1, lesson2, lesson3});
 console.log(allLessons);
+
+//6)Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+const studants = (obj) => {
+  const nkey1 = obj.lesson1.numeroEstudantes;
+  const nkey2 = obj.lesson2.numeroEstudantes;
+  const nkey3 = obj.lesson3.numeroEstudantes;
+  return Number(nkey1) + Number(nkey2) +Number(nkey3);
+};
+console.log(studants(allLessons));
+
+//7)Crie uma função que obtenha o valor da chave de acordo com o seu índice no objeto
+// console.log(getValueByNumber(lesson1, 0));
+// Output: 'Matématica'
+const valuesIndex = (obj, index) => Object.values(obj)[index];
+console.log(valuesIndex(lesson1, 2));
+
+//8)Crie uma função que verifique se o par (chave / valor) existe na função. 
+// Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+const verificKeyValue = (obj, key, value) => {
+
+}
+console.log(verificKeyValue(lesson2, 'matéria', 'História'));
